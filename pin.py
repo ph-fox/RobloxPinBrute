@@ -57,17 +57,17 @@ while True:
 
 	def about():
 		print("""
-   	  	  =============================================
-  	  	  +|             About this tool             |+
-  		  =============================================
-  	 	  +|              This Tool Is               |+
+          =============================================
+  	  +|             About this tool             |+
+  	  =============================================
+  	  +|              This Tool Is               |+
           +|               Is Created                |+
     	  +|                   By                    |+
     	  +|            Anikin Luke Abales           |+
      	  +|  for SudoCentercorp team CyberHackers   |+
           +|-----------------------------------------|+
     	  +| Tool name: IP-X /IpChanger every 20sec  |+
-   	  	  +| Use To Generate Credit card info's      |+
+   	  +| Use To Generate Credit card info's      |+
     	  +| Tool version: {version}                 |+
           +|-----------------------------------------|+
     	  +|                Contact                  |+
@@ -96,11 +96,11 @@ while True:
 
 
 	print(Fore.GREEN+"""
-		Hewo!, welcome to roblox pin bruteforcer
-		visit my github: https://github.com/abalesluke
-		By: Anikin Luke
+	Hewo!, welcome to roblox pin bruteforcer
+	visit my github: https://github.com/abalesluke
+	By: Anikin Luke
 	""")
-	print(Fore.MAGENTA+"type 'help' or -h to see commands ")
+	print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
 	ui = input(Fore.WHITE+"AL104 >~: ").lower()
 	
 	if(ui == 'help' or ui == '-h'):
@@ -113,3 +113,8 @@ while True:
 		about()
 	elif(ui == '0'):
 		break
+	else:
+		os.system("clear")
+		print("Error! command not found!")
+		print("Try Executing -h ")
+		time.sleep(1)
