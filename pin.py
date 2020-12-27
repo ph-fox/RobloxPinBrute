@@ -96,9 +96,9 @@ while True:
 
 
 	print(Fore.GREEN+"""
-	Hewo!, welcome to roblox pin bruteforcer
-	visit my github: https://github.com/abalesluke
-	By: Anikin Luke
+Hewo!, welcome to roblox pin bruteforcer
+visit my github: https://github.com/abalesluke
+By: Anikin Luke
 	""")
 	print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
 	ui = input(Fore.WHITE+"AL104 >~: ").lower()
