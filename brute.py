@@ -24,7 +24,7 @@ while True:
 		print("Type 'start' to start")
 		print("and it will automatically start in 5sec")
 		print("you must select a textbox so it will work")
-		ui = (input("AL104~: ").lower()
+		ui = input("AL104~: ").lower()
 		if(ui == 'start'):
 		      
 			w = "pins.txt"
@@ -45,7 +45,7 @@ while True:
 		print("Type 'start' to start")
 		print("and it will automatically start in 5sec")
 		print("you must select a textbox so it will work")
-		ui = (input("AL104~: ").lower()
+		ui = input("AL104~: ").lower()
 		if(ui == 'start'):
 		      
 			ui = input(">~: ")
