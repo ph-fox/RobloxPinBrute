@@ -2,7 +2,7 @@ import pyautogui as gui
 import random, time, os
 from colorama import Fore
 
-version = "1.8"
+version = "2.0"
 os.system("pip install colorama")
 os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
@@ -32,6 +32,7 @@ while True:
 			
 			time.sleep(5)
 			for x in w_open:
+				print(Fore.GREEN+x)
 				gui.write(x)
 				gui.press('Enter')
 				time.sleep(.5)
@@ -55,7 +56,7 @@ while True:
 			time.sleep(5)
 			while True:
 				r = random.choices(char_list, k=len(chars))
-				print(Fore.CYAN+r)
+				print(Fore.GREEN, r)
 				gui.write(r)
 				gui.press('Enter')
 				time.sleep(.2)
