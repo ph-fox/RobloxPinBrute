@@ -18,27 +18,44 @@ By: Anikin Luke
 print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
 	
 while True:
-
-	def path():
-		ui = "pins.txt"
-		ui_open = open(ui, 'r')
-		
-		time.sleep(3)
-		for x in ui_open:
-			gui.write(x)
-			gui.press('Enter')
-			time.sleep(.5)
-			gui.press('backspace', presses=6)	
 	
- 	
-	def default():
-		print("type 'start' to start")
+	
+	def path():
+		print("Type 'start' to start")
 		print("and it will automatically start in 5sec")
 		print("you must select a textbox so it will work")
-		ui = input(">~: ")
-		char = "1234567890"
-		char_list = list(char)
-		chars = "four"
+		ui = (input("AL104~: ").lower()
+		if(ui == 'start'):
+		      
+			w = "pins.txt"
+			w_open = open(ui, 'r')
+			
+			time.sleep(3)
+			for x in w_open:
+				gui.write(x)
+				gui.press('Enter')
+				time.sleep(.5)
+				gui.press('backspace', presses=6)
+		      
+		else:
+		      print("Type s or start to start.")
+		      return()
+ 	
+	def default():
+		print("Type 'start' to start")
+		print("and it will automatically start in 5sec")
+		print("you must select a textbox so it will work")
+		ui = (input("AL104~: ").lower()
+		if(ui == 'start'):
+		      
+			ui = input(">~: ")
+			char = "1234567890"
+			char_list = list(char)
+			chars = "four"
+		
+		else:
+		      print("Type s or start to start.")
+		      return()     
 		
 		while True:
 			r = random.choices(char_list, k=len(chars))
