@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+		<title>Bruteforce here!</title>
+	</head>
+
+	<body onload="check()" bgcolor="black">
+		<div align="center">
+			<h1>Test Bruteforce Here!</h1>
+			<input type="password" id="pbox" onkeydown="brute()">
+			<br>
+			<button onclick="show()">SHOW</button>
+			<h2>How To Use?</h2>
+			<p>1st refresh the page then Enter The Password you want to guess using my tool</p>
+			<p>My tool link: <a href="https://github.com/abalesluke/RobloxPinBrute">https://github.com/abalesluke/RobloxPinBrute</a></p>
+			<p>2nd click the text box then start the tool!</p>
+			<p> when the password you input guessed by my tool alert will pop up!
+		</div>
+
+		<style type="text/css">
+			a{
+				color: yellow;
+			}
+			h2{
+				color: lime;
+			}
+			h1{
+				font-size: 50px;
+				color: black;
+				font-family: "montserrat",sans-serif;
+				text-shadow: -2px -2px 0px cyan, 2px 2px 0px red;
+			}	
+			input{
+				outline: none;
+				height: 40px;
+				width:  200px;
+			}
+			p{
+				font-family: "Montserrat", sans-serif;
+				color: lime;
+			}
+		</style>
+
+		<script>
+			function check(){
+				userpss = prompt("Enter pass");
+			}
+
+			function brute(){
+				box = document.getElementById('pbox').value;
+
+				if(box == userpss){
+					alert("password found!");
+				}
+			}
+
+			function show(){
+				show = document.getElementById('pbox');
+				if(show.type == "password"){
+					show.type = "text";
+				}
+				else{
+					show.type = "password";
+				}
+			}
+
+		</script>
+	</body>
+
+</html>
