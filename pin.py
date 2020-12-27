@@ -2,6 +2,7 @@ import pyautogui as gui
 import random, time, os
 from colorama import Fore
 
+version = "1.3"
 os.system("pip install colorama")
 os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
@@ -52,22 +53,21 @@ while True:
 	+|   [0] =================== Exit           |+
 	+|                                          |+
  	 ===========================================		
-
  	""")	
 
 	def about():
 		print("""
-   	  =============================================
-  	  +|             About this tool             |+
-  	  =============================================
-  	  +|              This Tool Is               |+
+   	  	  =============================================
+  	  	  +|             About this tool             |+
+  		  =============================================
+  	 	  +|              This Tool Is               |+
           +|               Is Created                |+
     	  +|                   By                    |+
     	  +|            Anikin Luke Abales           |+
      	  +|  for SudoCentercorp team CyberHackers   |+
           +|-----------------------------------------|+
     	  +| Tool name: IP-X /IpChanger every 20sec  |+
-   	  +| Use To Generate Credit card info's      |+
+   	  	  +| Use To Generate Credit card info's      |+
     	  +| Tool version: {version}                 |+
           +|-----------------------------------------|+
     	  +|                Contact                  |+
@@ -76,7 +76,7 @@ while True:
           +|                                         |+
      	  +|          Discord invite link            |+
     	  +|     https://discord.gg/H7NXjU9BQ9       |+
-   	  +|--------------^--------^-----------------|+
+   		  +|--------------^--------^-----------------|+
     	  +| Github: https://github.com/abalesluke   |+
      	  +|                                         |+
     	  +|                 Note!                   |+
@@ -92,8 +92,7 @@ while True:
           +|        [+]Respect the coder's[+]        |+
           +|     ©️Copyright All Rights Reserved     |+
            ===========================================  
-
-	""")
+		""")
 
 
 	print(Fore.GREEN+"""
@@ -109,12 +108,8 @@ while True:
 	elif(ui == '1'):
 		path()
 	elif(ui == '2'):
-	default()
+		default()
 	elif(ui == '3'):
 		about()
 	elif(ui == '0'):
 		break
-
-	
-	
-
