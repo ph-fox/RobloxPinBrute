@@ -2,7 +2,7 @@ import pyautogui as gui
 import random, time, os
 from colorama import Fore
 
-version = "1.5"
+version = "1.6"
 os.system("pip install colorama")
 os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
@@ -20,7 +20,7 @@ print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
 while True:
 
 	def path():
-		ui = gui.prompt("Enter wordlist path: ")
+		ui = "pins.txt"
 		ui_open = open(ui, 'r')
 		
 		time.sleep(3)
