@@ -2,7 +2,7 @@ import pyautogui as gui
 import random, time, os
 from colorama import Fore
 
-version = "1.6"
+version = "1.8"
 os.system("pip install colorama")
 os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
@@ -21,16 +21,16 @@ while True:
 	
 	
 	def path():
-		print("Type 'start' to start")
-		print("and it will automatically start in 5sec")
-		print("you must select a textbox so it will work")
-		ui = input("AL104~: ").lower()
+		print(Fore.MAGENTA+"Type 'start' to start")
+		print(Fore.MAGENTA+"and it will automatically start in 5sec")
+		print(Fore.MAGENTA+"you must select a textbox so it will work")
+		ui = input(Fore.CYAN+"AL104~: ").lower()
 		if(ui == 'start'):
 		      
 			w = "pins.txt"
-			w_open = open(ui, 'r')
+			w_open = open(w, 'r')
 			
-			time.sleep(3)
+			time.sleep(5)
 			for x in w_open:
 				gui.write(x)
 				gui.press('Enter')
@@ -42,28 +42,28 @@ while True:
 		      return()
  	
 	def default():
-		print("Type 'start' to start")
-		print("and it will automatically start in 5sec")
-		print("you must select a textbox so it will work")
-		ui = input("AL104~: ").lower()
+		print(Fore.MAGENTA+"Type 'start' to start")
+		print(Fore.MAGENTA+"and it will automatically start in 5sec")
+		print(Fore.MAGENTA+"you must select a textbox so it will work")
+		ui = input(Fore.CYAN+"AL104~: ").lower()
 		if(ui == 'start'):
 		      
-			ui = input(">~: ")
 			char = "1234567890"
 			char_list = list(char)
 			chars = "four"
-		
+			
+			time.sleep(5)
+			while True:
+				r = random.choices(char_list, k=len(chars))
+				print(Fore.CYAN+r)
+				gui.write(r)
+				gui.press('Enter')
+				time.sleep(.2)
+				gui.press('backspace',presses=6)
+				
 		else:
 		      print("Type s or start to start.")
-		      return()     
-		
-		while True:
-			r = random.choices(char_list, k=len(chars))
-			print(r)
-			gui.write(r)
-			gui.press('Enter')
-			time.sleep(.2)
-			gui.press('backspace',presses=6)	
+		      return()  
 	
 	
 	def help():
