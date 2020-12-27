@@ -8,6 +8,15 @@ os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
 os.system("clear")
 
+print(Fore.GREEN+"""
+
+Hewo!, welcome to roblox pin bruteforcer
+visit my github: https://github.com/abalesluke
+By: Anikin Luke
+
+""")
+print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
+	
 while True:
 
 	def path():
@@ -76,7 +85,7 @@ while True:
           +|                                         |+
      	  +|          Discord invite link            |+
     	  +|     https://discord.gg/H7NXjU9BQ9       |+
-   		  +|--------------^--------^-----------------|+
+          +|--------------^--------^-----------------|+
     	  +| Github: https://github.com/abalesluke   |+
      	  +|                                         |+
     	  +|                 Note!                   |+
@@ -95,12 +104,6 @@ while True:
 		""")
 
 
-	print(Fore.GREEN+"""
-Hewo!, welcome to roblox pin bruteforcer
-visit my github: https://github.com/abalesluke
-By: Anikin Luke
-	""")
-	print(Fore.MAGENTA+"Type 'help' or -h to see commands ")
 	ui = input(Fore.WHITE+"AL104 >~: ").lower()
 	
 	if(ui == 'help' or ui == '-h'):
