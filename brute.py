@@ -2,7 +2,7 @@ import pyautogui as gui
 import random, time, os
 from colorama import Fore
 
-version = "2.0"
+version = "2.2"
 os.system("pip install colorama")
 os.system("pip3 install colorama")
 os.system("pip3 install pyautogui")
